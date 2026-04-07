@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ck5nfp7d0v7ye"]
+
+[ext_resource type="Script" uid="uid://b5q4m4a6px0pe" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Shader" uid="uid://bttmt0md24x13" path="res://main.gdshader" id="1_ig7tw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0xm2m"]
+shader = ExtResource("1_ig7tw")
+shader_parameter/mouse_pos = Vector2(0, 0)
+
+[node name="Main" type="Node2D" unique_id=2143136773]
+script = ExtResource("1_0xm2m")
+
+[node name="Canvas" type="ColorRect" parent="." unique_id=1708943700]
+material = SubResource("ShaderMaterial_0xm2m")
+offset_right = 800.0
+offset_bottom = 800.0
+metadata/_edit_use_anchors_ = true
